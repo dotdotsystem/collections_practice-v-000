@@ -33,3 +33,7 @@ end
 def sum_array(sum)
   sum.inject{|summ, n| summ + n}
 end
+
+def add_s(array)
+  array.each_with_index.collect {|word, index| index == 1 ? "#{word}":"#{word}s"}
+end

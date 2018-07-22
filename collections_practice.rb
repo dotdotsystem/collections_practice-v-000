@@ -13,5 +13,21 @@ def sort_array_char_count(array)
 end
 
 def swap_elements(array)
-  array.sort {|x,y| x[1] <=> y[2]}
+  array.sort {|a, b| a[1] <=> b[2]}
 end
+
+def reverse_array(array)
+  array.reverse_array
+end
+
+def kesha_maker(array)
+  array.each do |word|
+    word[2] = "$"
+  end
+end
+
+def find_a
+  array.select {|word| word.start_with?("a")}
+end
+
+  
